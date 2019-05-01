@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".LoginActivity"
+    android:background="@drawable/background_green"
+    android:id="@+id/loginAct_constraint_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_myStories"
+        android:layout_width="match_parent"
+        android:layout_height="167dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btn_start_new_story"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/ic_create_story_home"
+        android:onClick="btn_start_new_story_clicked"
+        app:layout_constraintBottom_toTopOf="@+id/create_story_tv"
+        app:layout_constraintEnd_toEndOf="@+id/create_story_tv"
+        app:layout_constraintStart_toStartOf="@+id/create_story_tv" />
+
+    <Button
+        android:id="@+id/btn_continue_story"
+        android:layout_width="127dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/ic_continue_story_button"
+        android:onClick="btn_continue_story_clicked"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/continue_story_tv"
+        app:layout_constraintEnd_toEndOf="@+id/continue_story_tv"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="@+id/continue_story_tv" />
+
+    <TextView
+        android:id="@+id/create_story_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/tv_loginAct_createStory"
+        android:textColor="#F50057"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/continue_story_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/tv_loginAct_continueStory"
+        android:textColor="#F50057"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/trail_illustrationmdpi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_myStories" />
+
+</android.support.constraint.ConstraintLayout>
+
+

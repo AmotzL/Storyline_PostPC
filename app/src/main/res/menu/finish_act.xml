@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_finishAct_createNewStory"
+        android:orderInCategory="3"
+        app:showAsAction="always"
+        android:title="@string/menu_newStory"
+        android:icon="@drawable/ic_create_story_icon"/>
+
+    <!--<item-->
+        <!--android:id="@+id/menu_finishAct_myProfile"-->
+        <!--android:orderInCategory="2"-->
+        <!--app:showAsAction="never"-->
+        <!--android:title="@string/menu_myProfile"/>-->
+
+    <item
+        android:id="@+id/menu_finishAct_myStories"
+        android:orderInCategory="2"
+        app:showAsAction="always"
+        android:title="@string/menu_myStories"
+        android:icon="@drawable/ic_my_stories_icon"/>
+
+    <item
+        android:id="@+id/menu_finishAct_share"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+        android:title="share"
+        android:icon="@drawable/ic_share_mystory"/>
+
+    <!--<item-->
+        <!--android:id="@+id/menu_finishAct_logOut"-->
+        <!--android:orderInCategory="4"-->
+        <!--app:showAsAction="never"-->
+        <!--android:title="@string/menu_logOut"/>-->
+
+
+</menu>

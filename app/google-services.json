@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "679179457266",
+    "firebase_url": "https://nisha-storyline.firebaseio.com",
+    "project_id": "nisha-storyline",
+    "storage_bucket": "nisha-storyline.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679179457266:android:274be6c2bd67a4cf",
+        "android_client_info": {
+          "package_name": "com.example.nisha.storyline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "679179457266-9vavmp32p8sj8stknt2pdj6rmn0abbb7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nisha.storyline",
+            "certificate_hash": "e85aaaa3d10cc62bc783bdd6581e48c935e6bf62"
+          }
+        },
+        {
+          "client_id": "679179457266-unhfgsa6ff9ktjna84stoicih1os00up.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPNzBiD8nrpArxDoumoyorivxAxiny3iA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "679179457266-unhfgsa6ff9ktjna84stoicih1os00up.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

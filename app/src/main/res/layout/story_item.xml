@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp">
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_storyItem_index"-->
+        <!--style="@style/TextAppearance.AppCompat.Title"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_vertical|start"-->
+        <!--android:fontFamily="monospace"-->
+        <!--android:textSize="30sp"-->
+        <!--tools:text="10"/>-->
+
+    <TextView
+        android:id="@+id/tv_storyItem_storyName"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|end"
+        android:fontFamily="monospace"
+        android:text="Eilat 2014"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/IV_storyItem_storyImg"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_gravity="left"
+        android:contentDescription="TODO"
+        android:background="@drawable/ic_my_stories_icon2"/>
+
+</FrameLayout>

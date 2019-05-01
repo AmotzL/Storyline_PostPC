@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinishStoryActivity">
+
+
+    <TextView
+        android:id="@+id/tv_FinishAct_storyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="sourh Africa 2017"/>
+
+
+
+    <TextView
+        android:id="@+id/tv_FinishAct_storyDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_FinishAct_storyName"
+        tools:text="description of the story"/>
+
+
+    <TextView
+        android:id="@+id/tv_FinishAct_storyLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_FinishAct_storyDescription"
+        tools:text="location of the story" />
+
+
+    <TextView
+        android:id="@+id/tv_FinishAct_startDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        tools:text="27/12/2018"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_FinishAct_centerLine"
+        app:layout_constraintEnd_toStartOf="@+id/tv_FinishAct_centerLine"
+        app:layout_constraintTop_toTopOf="@+id/tv_FinishAct_centerLine" />
+
+    <TextView
+        android:id="@+id/tv_FinishAct_centerLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="-"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_FinishAct_storyLocation" />
+
+    <TextView
+        android:id="@+id/tv_FinishAct_endDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_FinishAct_centerLine"
+        app:layout_constraintStart_toEndOf="@+id/tv_FinishAct_centerLine"
+        app:layout_constraintTop_toTopOf="@+id/tv_FinishAct_centerLine"
+        tools:text="27/12/2018" />
+
+    <TextView
+        android:id="@+id/tv_FinishAct_chooseSouvenir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/tv_FinishAct_chooseSouvenir"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_FinishAct_centerLine" />
+
+    <Button
+        android:id="@+id/btn_FinishAct_story"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:onClick="btn_FinishAct_story_clicked"
+        android:text="@string/btn_FinishAct_story"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_FinishAct_video"
+        app:layout_constraintEnd_toStartOf="@+id/btn_FinishAct_video"
+        app:layout_constraintTop_toTopOf="@+id/btn_FinishAct_video" />
+
+    <Button
+        android:id="@+id/btn_FinishAct_video"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="btn_FinishAct_video_clicked"
+        android:text="@string/btn_FinishAct_video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_FinishAct_chooseSouvenir" />
+
+    <Button
+        android:id="@+id/btn_FinishAct_album"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:onClick="btn_FinishAct_album_clicked"
+        android:text="@string/btn_FinishAct_album"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_FinishAct_video"
+        app:layout_constraintStart_toEndOf="@+id/btn_FinishAct_video"
+        app:layout_constraintTop_toTopOf="@+id/btn_FinishAct_video" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_FinishAct_storyName" />
+
+</android.support.constraint.ConstraintLayout>

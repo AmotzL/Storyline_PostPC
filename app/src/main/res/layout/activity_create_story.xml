@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_create_story"
+    tools:context=".CreateStoryActivity"
+    android:background="@drawable/background_green">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_createAct_storyName"
+            android:layout_width="246dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="@string/et_createAct_storyName"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/ic_trail_sign_createstory"
+            app:layout_constraintBottom_toBottomOf="@+id/et_createAct_storyName"
+            app:layout_constraintEnd_toStartOf="@+id/et_createAct_storyName"
+            app:layout_constraintTop_toTopOf="@+id/et_createAct_storyName" />
+
+        <EditText
+            android:id="@+id/et_createAct_storyDescription"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="@string/et_createAct_storyDescription"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_createAct_storyName" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/ic_description_icon_createstory"
+            app:layout_constraintBottom_toBottomOf="@+id/et_createAct_storyDescription"
+            app:layout_constraintStart_toEndOf="@+id/et_createAct_storyDescription"
+            app:layout_constraintTop_toTopOf="@+id/et_createAct_storyDescription" />
+
+        <EditText
+            android:id="@+id/et_crateAct_storyLocation"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="@string/et_createAct_storyLocation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_createAct_storyDescription" />
+
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/ic_asselocation_icon_createstory"
+            app:layout_constraintBottom_toBottomOf="@+id/et_crateAct_storyLocation"
+            app:layout_constraintStart_toEndOf="@+id/et_crateAct_storyLocation"
+            app:layout_constraintTop_toTopOf="@+id/et_crateAct_storyLocation" />
+
+        <Button
+            android:id="@+id/btn_createAct_startNewStory"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/ic_go_button_createstory"
+            android:onClick="btn_CreateAct_startNewStory_clicked"
+            android:text="@string/btn_createAct_startNewStory"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.513"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_crateAct_storyLocation" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="424dp"
+            android:background="@drawable/trail_illustrationmdpi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
